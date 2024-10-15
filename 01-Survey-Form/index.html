@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Taste Survey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Music Taste Survey</h1>
+            <p id="description">"This survey will help us understand the most popular music genres, the platforms frequently used, and the times or situations when music is often listened to."
+            </p>
+        </header>
+        
+        <form method="post" id="survey-form" action="">
+            <div class="form-group">
+                <label for="name-label" id="name-label">Enter your full name: <input required type="text" id="name" placeholder="Your name here..."></label>
+            </div>
+
+            <div class="form-group">
+                <label for="email-label" id="email-label">Enter your valid email: <input required type="email" id="email" placeholder="Your email here..."></label> 
+            </div>
+
+            <div class="form-group">
+                <label for="number-label" id="number-label">How old are you: <input type="number" id="number" min="16" max="80" placeholder="21"></label>
+            </div>
+                
+            <div class="form-group">
+                <label for="referrer-label" id="referrer-label">How many hours per day do you listen to music?
+                    <select name="dropdown" id="dropdown">
+                        <option value="">Select One</option>
+                        <option value="1">Under 1 hour</option>
+                        <option value="2">Between 1 to 2 hours</option>
+                        <option value="3">Betweeen 3 to 4 hours</option>
+                        <option value="4">Betweeen 4 to 5 hours</option>
+                        <option value="5">More than 5 hours</option>
+                    </select>
+                </label>
+            </div>
+                
+            <div class="form-group">
+                <p>What is your main platform for listening music</p>
+                <label for="spotify"><input type="radio" id="spotify" name="music-platform" class="inline" value="1" checked>Spotify</label>
+                <label for="deezer"><input type="radio" id="deezer" name="music-platform" class="inline" value="2">Deezer</label>
+                <label for="qobuz"><input type="radio" id="qobuz" name="music-platform" class="inline" value="3">Qobuz</label>
+                <label for="apple-music"><input type="radio" id="apple-music" name="music-platform" class="inline" value="4">Apple Music</label>
+                <label for="youtube-music"><input type="radio" id="youtube-music" name="music-platform" class="inline" value="5">Youtube Music</label>
+            </div>
+
+            <div class="form-group">
+                <p>Which of the following genre suite your taste? <span class="clue">(Check all that apply)</span></p>
+                <label for="pop"><input type="checkbox" id="genre-checkbox" value="pop" class="inline">Pop</label>
+                <label for="edm"><input type="checkbox" id="genre-checkbox" value="edm" class="inline">EDM</label>
+                <label for="rock"><input type="checkbox" id="genre-checkbox" value="rock" class="inline">Rock</label>
+                <label for="metal"><input type="checkbox" id="genre-checkbox" value="metal" class="inline">Metal</label>
+                <label for="country"><input type="checkbox" id="genre-checkbox" value="country" class="inline">Country</label>
+                <label for="alternative"><input type="checkbox" id="genre-checkbox" value="alternative" class="inline">Alternative</label>
+            </div>
+
+            <div class="form-group">
+                <p>Describe your usual situation when you decide to listen to music?</p>
+                <textarea name="listen-situation" id="listen-situation" class="input-textarea" placeholder="I listen to music everytime I do chores"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit" class="submit-button" value="submit">
+            </div>
+                
+            </form>
+        
+       
+    </body>
+
+
+</html>
