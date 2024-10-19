@@ -1,0 +1,146 @@
+html,body{
+    min-width: 300px;
+    color: #4d4d4d;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 310px;
+    min-width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.6);
+    background-color: white;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#navbar ul{
+    height: 100vw;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar li{
+    color: #4d4d4d;
+    border-top: 1px solid;
+    list-style: none;
+    width: 100%;
+    position: relative;
+}
+
+#navbar a {
+    display: block;
+    padding: 15px 45px;
+    color: #4d4d4d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+header{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+
+#main-doc{
+    margin-left: 330px;
+    margin-bottom: 100px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .burger {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger div {
+    width: 100%;
+    height: 4px;
+    background-color: #4d4d4d;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+    #navbar {
+        transform: translateX(-100%); /* Sembunyikan sidebar */
+    }
+
+    #main-doc {
+        margin-left: 0; 
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #navbar.active {
+        transform: translateX(0); /* Tampilkan sidebar ketika diaktifkan */
+    }
+
+    .burger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
