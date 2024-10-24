@@ -1,0 +1,225 @@
+/* General Styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f7d39b;
+}
+  
+  header {
+    background-color: #a2a457; 
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    border-radius: 0px 0px 6px 6px;
+  }
+  
+  #header-img {
+    width: 60px;
+    height: auto;
+    margin-left:auto;
+    margin-right:20px
+  }
+  
+  nav {
+    margin-right: 20px;
+  }
+  
+  #nav-bar {
+    position:fixed;
+    top:0;
+  }
+  
+  #nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  #nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+    font-weight: bold; 
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+  }
+  
+  #nav-bar a:hover {
+    color: #a7e9f0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  #instruments h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+ #video-section, #contact h2, #about {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  p {
+      font-family: 'Open Sans', sans-serif; 
+      font-size: 1.1rem;
+      color: #330;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  input[type="email"] {
+    border: 1px solid #b5b5b5;
+    margin: 10px 0;
+    width: 250px;
+    padding: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #f7a1b1;
+    color: white;
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    height: 35px;
+    margin: 0px 0;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e77d9b;
+    transform: scale(1.05);
+  }
+  
+  /* Instrument Grid Styling */
+  .instrument-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .instrument-item {
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #f7a1b1;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .instrument-item img {
+    width: 728px;
+    height: 728px;
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+  
+  .instrument-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #a7e9f0;
+  }
+  
+  .instrument-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  /* Price Styling */
+  .price {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #a2a457;
+  }
+  
+  .discounted-price {
+    color: #a7e9f0; 
+    font-weight: bold;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #a2a457; 
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  /* Flexbox Usage */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    #nav-bar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #video {
+      width: 100%;
+      height: auto;
+    }
+  
+    input[type="email"], input[type="submit"] {
+      width: 100%;
+    }
+  
+    .instrument-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .instrument-item {
+      width: 100%;
+    }
+  }

@@ -4,3 +4,4 @@ Team 1
 - Krisna
 - Tiwi
 - Taka
+- Fauzi
