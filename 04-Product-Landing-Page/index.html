@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicHub Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500,0..100,0..1;1,9..144,500,0..100,0..1&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <img id="header-img" src="https://themusichubeg.com/wp-content/uploads/2021/08/cropped-cropped-White_white_white.png" alt="MusicHub Logo">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#instruments">Instruments</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Instruments Section -->
+    <section id="instruments">
+      <h2>Special Price for This Month</h2>
+      <div class="instrument-grid">
+        <div class="instrument-item">
+          <img src="https://www.musicworks.co.nz/content/products/martin-d-35-6-string-acoustic-guitar-1-d35.jpg?canvas=1:1&width=2500" alt="Acoustic Guitar">
+          <h3>Acoustic Guitar</h3>
+          <p>A high-quality acoustic guitar with rich sound, perfect for beginners and professionals alike.</p>
+          <p class="price">Original: <span class="original-price">$200.00</span> <br> Discounted: <span class="discounted-price">$170.00</span></p>
+        </div>
+        <div class="instrument-item">
+          <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/263be203fdb4831fcff24348c255c941/v/f/vfm8030-1.jpg" alt="Digital Piano">
+          <h3>Digital Piano</h3>
+          <p>A versatile digital piano with weighted keys and multiple sound settings for all levels of players.</p>
+          <p class="price">Original: <span class="original-price">$600.00</span> <br> Discounted: <span class="discounted-price">$510.00</span></p>
+        </div>
+        <div class="instrument-item">
+          <img src="https://sinceremusic.co.id/wp-content/uploads/2022/07/Pearl-Decade-Maple-DMPC927-SP-C-Drum-Set-Black.jpg" alt="Drum Set">
+          <h3>Drum Set</h3>
+          <p>A complete drum set with high-quality cymbals and hardware, perfect for any drummer.</p>
+          <p class="price">Original: <span class="original-price">$800.00</span> <br> Discounted: <span class="discounted-price">$680.00</span></p>
+        </div>
+        <div class="instrument-item">
+          <img src="https://mg.co.id/wp-content/uploads/2024/08/Electric-Violin-AS-160.jpg" alt="Electric Violin">
+          <h3>Electric Violin</h3>
+          <p>A sleek and modern electric violin that offers incredible sound and playability.</p>
+          <p class="price">Original: <span class="original-price">$400.00</span> <br> Discounted: <span class="discounted-price">$340.00</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About MusicHub</h2>
+      <p>At MusicHub, we bring you the finest selection of musical instruments, gear, and accessories for musicians of all skill levels. Whether you're looking for a new instrument or seeking expert advice, we’re here to help you find your sound.</p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-section">
+      <h2>Music of the Month </h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/T1tDorodPbM?si=oc8gfhbm_NNiO4Ie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Stay Updated</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <label for="email">Subscribe to our newsletter for the latest music updates</label>
+        <input name='email' id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Subscribe">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MusicHub. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
